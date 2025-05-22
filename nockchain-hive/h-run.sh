@@ -48,4 +48,4 @@ sudo systemctl stop hive-watchdog 2>&1 | tee -a "$LOG_FILE"
 sudo systemctl disable hive-watchdog 2>&1 | tee -a "$LOG_FILE"
 
 # Start Miner
-./nockchain --mining_pubkey $WALLET --mine 2>&1 | tee $CUSTOM_LOG_BASENAME.log
+./nockchain --mining-pubkey $WALLET --mine 2>&1 | tee $CUSTOM_LOG_BASENAME.log
